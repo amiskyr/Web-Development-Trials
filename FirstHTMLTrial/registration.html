@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon Registration</title>
+</head>
+
+<body>
+    <h1>Race Registration</h1>
+    <form action="/registration">
+        <div>
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstName" id="firstname" placeholder="First name">
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastName" id="lastname" placeholder="Last name">
+        </div>
+        <br>
+        <div>
+            Select a race:
+            <br>
+            <br>
+            <div>
+                <input type="radio" name="raceType" id="funrun5k" value="1">
+                <label for="funrun5k">Fun Run 5k</label>
+                <br>
+                <input type="radio" name="raceType" id="fullmarathon" value="2">
+                <label for="fullmarathon">Half Marathon</label>
+                <br>
+                <input type="radio" name="raceType" id="halfmarathon" value="3">
+                <label for="halfmarathon">Full Marathon</label>
+            </div>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Password">
+        </div>
+        <div>
+            <label for="age">Select Age Group:</label>
+            <select name="age" id="age">
+                <option value="under18" selected>under 18</option>
+                <option value="18to30">18-30</option>
+                <option value="30to50">30-50</option>
+                <option value="50andup">50+</option>
+            </select>
+        </div>
+        <button>Register</button>
+        <!-- <input type="button" value="Register"> -->
+    </form>
+</body>
+
+</html>
