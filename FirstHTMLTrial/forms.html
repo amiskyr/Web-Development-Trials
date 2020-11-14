@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <form action="/tacos">
+        <div>
+            <label for="username">Enter username:</label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </div>
+        <div>
+            <label for="password">Enter password</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </div>
+        <div>
+            <label for="enroll">Enter last 4 digits of enrollment number</label>
+            <input id="enroll" type="number" placeholder="enrollment number" name="enroll" min="1" max="2000">
+        </div>
+        <div>
+            <label for="theme">Chosse theme color</label>
+            <input id="theme" type="color" name="color">
+        </div>
+        <!--Generic button that submits the form.-->
+        <button>Submit</button><br>
+        <!--This button is an input element that acts as submit button-->
+        <input type="submit" value="Click me"><br>
+        <!--Button where it's explicitly mentioned("type") to not act as submit button-->
+        <button type="button">Do nothing</button><br>
+    </form>
+
+    <h2>Search Google</h2>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+
+    <h2>More Inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to everything</label>
+        <p>
+            Select year: <br>
+            <input type="radio" name="year" id="first" value="1">
+            <label for="first">First Year</label>
+
+            <input type="radio" name="year" id="second" value="2">
+            <label for="second">Second Year</label>
+
+            <input type="radio" name="year" id="third" value="3">
+            <label for="third">Third Year</label>
+        </p>
+        <p>
+            <label for="meal">Please Select lunch</label>
+            <select name="meal" id="meal">
+                <option value="veg" selected>Vegetarian</option>
+                <option value="fish">Fish</option>
+                <option value="chicken">Chicken</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of cheese</label>
+            <input type="range" id="cheese" min="0" max="100" value="75" step="5" name="cheese_level">
+        </p>
+        <p>
+            <label for="message">Message to organizer:</label><br>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <label for="firstname">Enter first name:</label>
+        <input type="text" name="firstname" id="firstname" required><br>
+
+        <label for="lastname">Enter last name:</label>
+        <input type="text" name="lastname" id="lastname" required><br>
+
+        <label for="username">Enter username:</label>
+        <input type="text" name="username" id="username" minlength="5" maxlength="20" required><br>
+
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
