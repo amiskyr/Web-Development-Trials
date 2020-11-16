@@ -1,0 +1,73 @@
+/* universal slector */
+*{
+    background-color: #f1faee;
+}
+/* element slector */
+button{
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+span{
+    color: #457b9d;
+}
+/* multi element selector */
+h1,h2{
+    color: #1d3557;
+}
+/* id selector */
+#signup{
+    background-color: #1d3557;
+    color: #f1faee;
+}
+/* class selector */
+.tag{
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+/* class descendent selector */
+.post a{
+    color: #457b9d;
+    font-weight: 700;
+    text-decoration: none;
+}
+/* descendent combinator */
+footer a{
+    color: #e63946;
+}
+/* adjacent selector */
+h2 + button{
+    font-size: 20px;
+}
+/* direct descendent combinator */
+footer > a{
+    color: maroon;
+}
+/* attribute selector */
+input[type="password"]{
+    color: orangered;
+}
+/* Pseudo class */
+.post button:hover{
+    background-color: #e63946;
+    color: white;
+}
+.post a:hover{
+    text-decoration: underline;
+}
+.post button:active{
+    background-color: #02c39a;
+}
+.post:nth-of-type(2n){
+    background-color: #dfe8dc;
+}
+/* Pseudo elements */
+h2::first-letter{
+    font-size: 50px;
+}
+p::first-line{
+    color: purple;
+}
+p::selection{
+    background-color: #fcbf49;
+}
