@@ -1,0 +1,113 @@
+html{
+    font-size: 15px;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    background-color: pink;
+    width: 100px;
+    padding-left: 100px;
+    padding-top: 50px;
+    margin: 0;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: plum;
+}
+
+#one{
+    background-color: #e5989b;
+    border-width: 5px;
+    border-color: rgb(255, 2, 2);
+    border-style: solid;
+    border-left-style: dotted;
+    /* box-sizing: border-box; */
+    padding: 5px 10px 5px 10px;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    
+}
+
+#two{
+    background-color: #b5838d;
+    border-color: #4400ff;
+    border-width: 5px;
+    border-style: solid;
+    border-left-style: dashed;
+    padding: 5px 10px 5px 10px;
+    margin: 25px 25px 25px 25px;
+    
+}
+
+#three{
+    background-color: #7c5f65;
+    /* size style color */
+    border: 5px solid rgb(43, 2, 2); 
+    border-left-style: dotted;
+    border-radius: 5%;
+    padding: 5px 10px 5px 10px;
+    margin: 25px 10px 25px 25px;
+    
+}
+
+button{
+    padding: 10px 10px 10px 10px;
+    margin: 10px 25px;
+}
+
+div{
+    display: inline-block;
+}
+
+/* CSS units tutorial */
+#ems article{
+    font-size: 15px;
+}
+
+#ems h2{
+    font-size: 2em;
+    margin-left: 1em;
+}
+
+#ems h3{
+    font-size: 1.5em;
+}
+
+#ems p{
+    font-size: 1em;
+}
+
+button{
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: #2a9d8f;
+    color: white;
+}
+
+#ems ul{
+    font-size: 1.5em;
+}
+
+#rems h2{
+    font-size: 3 rem;
+} 
+
+#rems h3{
+    font-size: 2rem;
+}
+
+#rems ul{
+    font-size: 0.8rem;
+}
+
+#rems button{
+    font-size: 1.5rem;
+}
