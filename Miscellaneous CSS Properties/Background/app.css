@@ -1,0 +1,22 @@
+section{
+    width: 80%;
+    height: 800px;
+    /* background-image: url("https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+    background-position: center; */
+
+    background: center/cover url("https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");  
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 50px;
+    font-family: 'Big Shoulders Stencil Text';
+    color: azure;
+}
+
+p{
+    font-size: 25px;
+    font-family: 'Big Shoulders Stencil Text';
+    color: azure;    
+}
