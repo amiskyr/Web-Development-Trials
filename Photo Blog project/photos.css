@@ -1,10 +1,12 @@
 body{
     margin: 0%;
 }
+
 img{
     width: 30%;
     margin: calc(10%/6);
 }
+
 nav{
     text-transform: uppercase;
     border-bottom: 2px solid #f1f1f1;
