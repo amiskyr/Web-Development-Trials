@@ -19,7 +19,7 @@ const delayedColorChange = (newColor, delay) => {
 //     })
 // });
 
-// chaining the promise object methods onto the returned promis objects
+// chaining the promise object methods onto the returned promise objects
 delayedColorChange("red", 1000)
     .then(() => delayedColorChange("orange", 1000))
     .then(() => delayedColorChange("yellow", 1000))
