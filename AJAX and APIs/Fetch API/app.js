@@ -1,5 +1,6 @@
 let url = "https://api.cryptonator.com/api/ticker/btc-usd";
 
+// normal promise based implementation of fetch method
 // fetch(url)
 //     .then((res) => {
 //         console.log("Response, waiting to parse...", res);
@@ -13,6 +14,8 @@ let url = "https://api.cryptonator.com/api/ticker/btc-usd";
 //         console.log("Error!", e);
 //     })
 
+// async function based implementation of fetch
+// failure in any of the request will take the control flow to catch block
 const fetchBitcoinPrice = async () => {
     try {
         const res = await fetch(url);
@@ -23,4 +26,3 @@ const fetchBitcoinPrice = async () => {
         console.log("Request error!", e);
     }
 }
-//failure in any of the request will take the control flow to catch block
