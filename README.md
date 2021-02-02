@@ -1,8 +1,9 @@
 # WebD-Trials
 # Content 
-1. HTML Tutorials
-2. CSS Tutorials
-3. Bootstrap Tutorials
-4. Javascript Tutorials
-5. Async JavaScript 
+1. HTML
+2. CSS
+3. Bootstrap
+4. Javascript
+5. Async JavaScript
 6. Ajax and APIs
+7. OOPs in Javascript
