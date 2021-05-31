@@ -1,7 +1,5 @@
 <h1>WebD-Trials</h1>
-
 <h2>Content</h2>
-
 <ol>
     <li>HTML</li>
     <li>CSS</li>
