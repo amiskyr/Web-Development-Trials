@@ -10,5 +10,4 @@
     <li>Async JavaScript</li>
     <li>Ajax and APIs</li>
     <li>OOPs in Javascript</li>
-    <li>Projects</li>
 </ol> 
