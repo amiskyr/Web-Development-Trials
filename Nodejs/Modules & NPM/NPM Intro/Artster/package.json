@@ -1,0 +1,21 @@
+{
+  "name": "artster",
+  "version": "1.0.0",
+  "description": "Artsy bitsy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "waba",
+    "laba",
+    "dub",
+    "dub"
+  ],
+  "author": "Akash Roy",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "figlet": "^1.6.0"
+  }
+}
