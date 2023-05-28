@@ -13,7 +13,7 @@ app.get('/tacos', (req, res) => {
 app.post('/tacos', (req, res) => {
     // console.log(req.body)
     const { meat, qty } = req.body
-    res.send(`OK, here are your ${qty} ${meat} tacos. `)
+    res.send(`OK, here are your ${qty} ${meat} tacos.`)
 })
 
 app.listen(3000, () => {
