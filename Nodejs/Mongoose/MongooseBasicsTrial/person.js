@@ -29,10 +29,14 @@ personSchema.virtual('fullName')
         this.second = v.substr(v.indexOf(' ') + 1)
     })
 
+// Mongoose Middleware trial
+personSchema.pre('save', async function () {
+    this.first = 'Joe'
+    this.second = 'Mama'
+    console.log('About to save!')
+})
+personSchema.post('save', async function () {
+    console.log('Just saved!')
+})
+
 const Person = mongoose.model('Person', personSchema)
-
-const tammy = new Person({ first: 'Tammy', second: 'Chow' })
-
-console.log(tammy.fullName)
-tammy.fullName = 'Tammy Xiao'
-console.log(tammy.fullName)
