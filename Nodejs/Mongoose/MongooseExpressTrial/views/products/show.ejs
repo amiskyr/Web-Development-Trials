@@ -20,6 +20,10 @@
         </li>
     </ul>
     <a href="/products">All Products</a>
+    <a href="/products/<%= productFound._id %>/edit">Edit Product</a>
+    <form action="/products/<%= productFound._id %>?_method=DELETE" method="POST">
+        <button>Delete</button>
+    </form>
 </body>
 
 </html>
