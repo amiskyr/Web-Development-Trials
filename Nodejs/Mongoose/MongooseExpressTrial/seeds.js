@@ -21,6 +21,8 @@ mongoose.connect(winURI)
 //     category: 'fruit'
 // })
 
+
+// Inserting one product
 // p.save()
 //     .then(data => {
 //         console.log(data)
@@ -57,10 +59,10 @@ const seedProducts = [
     },
 ]
 
-Product.insertMany(seedProducts)
-    .then(data => {
-        console.log(data)
-    })
-    .catch(err => {
-        console.log(err)
-    })
+// Product.insertMany(seedProducts)
+//     .then(data => {
+//         console.log(data)
+//     })
+//     .catch(err => {
+//         console.log(err)
+//     })
