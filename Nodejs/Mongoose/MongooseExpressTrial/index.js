@@ -10,7 +10,7 @@ const winURI = 'mongodb://127.0.0.1:27017/farmStand'
 const categories = ['fruit', 'vegetable', 'dairy']
 
 // setup mongoose connection
-mongoose.connect(winURI)
+mongoose.connect(macURI)
     .then((data) => {
         console.log('---mongo connection open---\n')
         // console.log(data)
