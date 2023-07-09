@@ -24,10 +24,10 @@ app.get("/r/:subreddit", (req, res) => {
     const data = redditData[subreddit]
     // console.log(data)
     if (data) {
-        res.render('subreddit.ejs', { ...data })
+        res.render('subreddit.ejs', { ...data })    // ... saves us time to iterate through the data object, and we can access all the parameter inside the data in the template
     }
     else {
-        res.render('notfound.ejs', { subreddit }) // {subreddit} is same as {subreddit: subreddit}        
+        res.render('notfound.ejs', { subreddit })   // {subreddit} is same as {subreddit: subreddit}        
     }
 })
 
