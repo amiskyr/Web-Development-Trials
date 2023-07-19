@@ -97,6 +97,21 @@ app.delete('/products/:id', wrapAsync(async (req, res) => {
     res.redirect('/products')
 }))
 
+const handleValidationError = err => {
+    console.dir(err)
+    return new AppError(`Validation Failure... ${err.message}`, 400)
+}
+
+// Differentiating Mongoose Errors
+app.use((err, req, res, next) => {
+    console.log(err.name)
+
+    if (err.name === 'ValidationError') err = handleValidationError(err)
+    // if (err.name === 'CastError') err = handleCastError(err)
+
+    next(err)
+})
+
 app.use((err, req, res, next) => {
     const { status = 500, message = 'Something went wrong!' } = err    // setting the default value so in case of undefined status we will respond with this
     res.status(status).send(message)
