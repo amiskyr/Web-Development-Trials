@@ -64,12 +64,23 @@ app.post('/login', async (req, res) => {
     }
 })
 
+app.post('/logout', (req, res) => {
+    // stop tracking the user id to log out
+    // req.session.user_id = null;
+
+    // another way to log out by destroying the session
+    req.session.destroy();
+
+    res.redirect('/login');
+})
+
 // specific route to test logged in state using session
 app.get('/secret', (req, res) => {
     if (!req.session.user_id) {
-        res.redirect('/login')
+        return res.redirect('/login')
     }
-    res.send(`This is secret, you can't see me unless you're logged in!`)
+    // res.send(`This is secret, you can't see me unless you're logged in!`)
+    res.render('secret')
 })
 
 app.listen('3000', () => {
