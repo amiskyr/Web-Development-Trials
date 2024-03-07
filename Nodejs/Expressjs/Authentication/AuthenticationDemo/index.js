@@ -25,6 +25,14 @@ app.set('views', 'views');
 app.use(express.urlencoded({ extended: true }));
 app.use(session({ secret: 'notagoodsecret', resave: false, saveUninitialized: false }))
 
+// middleware to check whether user is logged-in or not
+const requireLogin = (req, res, next) => {
+    if (!req.session.user_id) {
+        return res.redirect('/login');
+    }
+    next();
+}
+
 app.get('/', (req, res) => {
     res.send('This is the homepage')
 })
@@ -75,12 +83,12 @@ app.post('/logout', (req, res) => {
 })
 
 // specific route to test logged in state using session
-app.get('/secret', (req, res) => {
-    if (!req.session.user_id) {
-        return res.redirect('/login')
-    }
-    // res.send(`This is secret, you can't see me unless you're logged in!`)
+app.get('/secret', requireLogin, (req, res) => {
     res.render('secret')
+})
+
+app.get('/topsecret', requireLogin, (req, res) => {
+    res.send('Top Secret')
 })
 
 app.listen('3000', () => {
