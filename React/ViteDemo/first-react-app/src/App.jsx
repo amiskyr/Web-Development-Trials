@@ -11,6 +11,7 @@ import ShoppingList from './ShoppingListDemo/ShoppingList'
 import PropertyList from './PropertyListDemo/PropertyList'
 import Clicker from './ReactEventsDemo/Clicker'
 import CustomClicker from './ReactEventsDemo/CustomClicker'
+import Counter from './ReactStatesDemo/Counter'
 
 const data = [
   { id: 1, item: "eggs", quantity: 12, completed: false },
@@ -49,8 +50,11 @@ function App() {
       {/* <PropertyList properties={properties} /> */}
 
       {/* // React Events */}
-      <Clicker />
-      <CustomClicker message="Stop Spamming Me!" buttonText="Click Me" />
+      {/* <Clicker /> */}
+      {/* <CustomClicker message="Stop Spamming Me!" buttonText="Click Me" /> */}
+
+      {/* // React States */}
+      <Counter />
     </div>
   )
 }
