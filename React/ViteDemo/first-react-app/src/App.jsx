@@ -13,6 +13,7 @@ import Clicker from './ReactEventsDemo/Clicker'
 import CustomClicker from './ReactEventsDemo/CustomClicker'
 import Counter from './ReactStatesDemo/Counter'
 import Toggler from './ReactStatesDemo/Toggler'
+import ColorBox from './ReactStatesDemo/ColorBoxExercise/ColorBox'
 
 const data = [
   { id: 1, item: "eggs", quantity: 12, completed: false },
@@ -29,6 +30,25 @@ const properties = [
   { id: 129035, name: "Oceanview Condo", rating: 4.1, price: 350 },
   { id: 129036, name: "Gold Miner Campground", rating: 4.7, price: 400 },
 ]
+
+const colors = [
+  "#E53935",
+  "#E91E63",
+  "#9C27B0",
+  "#673AB7",
+  "#3F51B5",
+  "#2196F3",
+  "#03A9F4",
+  "#00BCD4",
+  "#009688",
+  "#4CAF50",
+  "#8BC34A",
+  "#CDDC39",
+  "#FFEB3B",
+  "#FFC107",
+  "#FF9800",
+  "#FF5722",
+];
 
 function App() {
   return (
@@ -56,7 +76,8 @@ function App() {
 
       {/* // React States */}
       {/* <Counter /> */}
-      <Toggler />
+      {/* <Toggler /> */}
+      <ColorBox colorList={colors} row={5} column={5} />
     </div>
   )
 }
