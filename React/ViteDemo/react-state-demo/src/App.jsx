@@ -2,6 +2,7 @@ import './App.css'
 import Counter from './BasicStatesDemo/Counter'
 import EmojiClicker from './IntermediateStatesDemo/EmojiClicker'
 import InitializerDemo from './IntermediateStatesDemo/InitializerDemo'
+import ScoreCounter from './IntermediateStatesDemo/ScoreCounter'
 import ScoreKeeper from './IntermediateStatesDemo/ScoreKeeper'
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
       {/* <Counter /> */}
       {/* <InitializerDemo /> */}
       {/* <ScoreKeeper /> */}
-      <EmojiClicker />
+      {/* <EmojiClicker /> */}
+      <ScoreCounter numPlayers={4} winTarget={5} />
     </>
   )
 }
