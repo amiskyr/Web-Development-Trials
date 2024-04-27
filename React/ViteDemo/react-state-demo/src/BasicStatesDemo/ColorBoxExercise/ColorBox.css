@@ -1,0 +1,8 @@
+.ColorBox {
+    /* flex-direction: column; */
+    width: 500px;
+    height: 500px;
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
