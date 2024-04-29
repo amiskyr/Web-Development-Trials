@@ -9,7 +9,9 @@ export default function UsernameForm() {
     }
     return (
         <div>
+            <label htmlFor="username">Enter a username</label>
             <input
+                id="username"
                 type="text"
                 placeholder="username"
                 value={username}
