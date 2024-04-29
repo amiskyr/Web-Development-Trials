@@ -10,7 +10,7 @@ export default function EmojiClicker() {
     const [emojis, setEmojis] = useState([{ id: uuid(), emoji: "😊" }]);
     const addEmoji = () => {
         //creates copy of emojis array to pass it further
-        setEmojis((oldEmojis) => [...oldEmojis, { id: uuid(), emoji: getRandomEmoji() }]);
+        setEmojis((oldEmojis) => [...oldEmojis, { id: uuid(), emoji: getRandomEmoji() }]);  // shorthand technique
     }
     const removeEmoji = (id) => {
         setEmojis((oldEmojis) => {
@@ -22,9 +22,9 @@ export default function EmojiClicker() {
 
     return (
         <div>
-            {emojis.map((e) => (
+            {emojis.map((e) => (    // shorthand technique
                 <span
-                    onClick={() => { removeEmoji(e.id) }}
+                    onClick={() => { removeEmoji(e.id) }}   // shorthand technique
                     key={e.id}
                     style={{ fontSize: "5rem" }}
                 >{e.emoji}</span>
