@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ShoppingListForm from "./ShoppingListForm";
+import ValidatedShoppingListForm from "./ValidatedShoppingListForm";
 import { v4 as uuid } from "uuid";
 
 export default function ShoppingList() {
@@ -24,7 +25,8 @@ export default function ShoppingList() {
                     </li>
                 ))}
             </ul>
-            <ShoppingListForm addItem={addItem} />
+            {/* <ShoppingListForm addItem={addItem} /> */}
+            <ValidatedShoppingListForm addItem={addItem} />
         </div>
     );
 } 
